@@ -9,11 +9,13 @@
     <version>1.0.0</version>
 
     <dependencies>
+        <!-- 连接zookeeper -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-framework</artifactId>
             <version>4.2.0</version>
         </dependency>
+        <!-- 操作分布式锁 -->
         <dependency>
             <groupId>org.apache.curator</groupId>
             <artifactId>curator-recipes</artifactId>
