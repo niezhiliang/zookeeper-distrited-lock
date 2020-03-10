@@ -8,7 +8,7 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 public class DisLock {
 
     public static void main(String[] args) {
-        CuratorFramework curatorFramework = CuratorFrameworkFactory.newClient("120.78.149.247:2181",
+        CuratorFramework curatorFramework = CuratorFrameworkFactory.newClient("127.0.0.1:2181",
                 5000,4000,new ExponentialBackoffRetry(1000,3));
         //获取一个客户端连接
         curatorFramework.start();

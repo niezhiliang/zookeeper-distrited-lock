@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  zookeeper:
+    image: zookeeper:3.5
+    restart: always
+    hostname: zookeeper
+    ports:
+      - 2181:2181
+    volumes:
+      - /tmp/zookeeper/data:/data
